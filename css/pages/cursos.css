@@ -1,0 +1,15 @@
+.page-hero {
+  padding: var(--space-7) 0;
+}
+
+.page-hero--compact {
+  padding: var(--space-6) 0;
+}
+
+.page-hero__panel {
+  padding: var(--space-4);
+  border-radius: var(--radius-md);
+  background: var(--color-surface);
+  box-shadow: var(--shadow-card);
+  text-align: left;
+}

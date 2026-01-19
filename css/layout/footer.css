@@ -1,0 +1,27 @@
+.site-footer {
+  background: var(--color-ink);
+  color: #fff;
+  padding: var(--space-7) 0 var(--space-5);
+  margin-top: var(--space-8);
+}
+
+.site-footer .logo {
+  color: #fff;
+}
+
+.site-footer h3 {
+  font-family: var(--font-display);
+  margin-bottom: var(--space-3);
+}
+
+.site-footer ul {
+  display: grid;
+  gap: var(--space-2);
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.footer__bottom {
+  border-top: 1px solid rgba(255, 255, 255, 0.12);
+  margin-top: var(--space-5);
+  padding-top: var(--space-4);
+}

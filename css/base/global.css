@@ -1,0 +1,99 @@
+body {
+  font-family: var(--font-body);
+  color: var(--color-ink);
+  background: radial-gradient(
+      circle at top left,
+      rgba(245, 90, 59, 0.15),
+      transparent 45%
+    ),
+    radial-gradient(
+      circle at 70% 10%,
+      rgba(30, 91, 99, 0.12),
+      transparent 55%
+    ),
+    var(--color-bg);
+  line-height: 1.6;
+  min-height: 100vh;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: var(--font-display);
+  line-height: 1.15;
+  letter-spacing: -0.02em;
+}
+
+h1 {
+  font-size: clamp(2.2rem, 4vw, 3.4rem);
+}
+
+h2 {
+  font-size: clamp(1.6rem, 2.8vw, 2.4rem);
+}
+
+p {
+  color: var(--color-ink-soft);
+}
+
+main {
+  display: block;
+}
+
+.container {
+  width: min(100% - 32px, var(--max-width));
+  margin-inline: auto;
+}
+
+.eyebrow {
+  text-transform: uppercase;
+  font-family: var(--font-display);
+  font-size: 0.8rem;
+  letter-spacing: 0.12em;
+  color: var(--color-secondary);
+  margin-bottom: var(--space-3);
+}
+
+.lead {
+  font-size: 1.1rem;
+  color: var(--color-ink-soft);
+}
+
+.muted {
+  color: var(--color-muted);
+}
+
+.section {
+  padding: var(--space-8) 0;
+}
+
+.section--alt {
+  background: var(--color-bg-alt);
+}
+
+.list {
+  display: grid;
+  gap: var(--space-3);
+  color: var(--color-ink-soft);
+  padding-left: var(--space-4);
+}
+
+ul.list {
+  list-style: disc;
+}
+
+ol.list {
+  list-style: decimal;
+}
+
+.list li {
+  list-style-position: outside;
+}
+
+.badge-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-2);
+  margin-top: var(--space-4);
+}

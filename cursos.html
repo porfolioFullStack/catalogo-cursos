@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Catalogo de Cursos | Cursos</title>
+    <meta
+      name="description"
+      content="Listado completo de cursos con filtros por categoria y nivel."
+    />
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
+  <body class="page-cursos">
+    <header class="site-header">
+      <div class="container header__inner">
+        <a class="logo" href="index.html">AulaNova</a>
+        <nav class="nav" aria-label="Navegacion principal">
+          <a href="index.html">Inicio</a>
+          <a href="cursos.html" aria-current="page">Cursos</a>
+          <a href="recursos.html">Recursos</a>
+          <a href="inscripcion.html" class="btn btn--ghost">Inscripcion</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="page-hero">
+        <div class="container page-hero__content">
+          <div>
+            <p class="eyebrow">Catalogo completo</p>
+            <h1>Cursos para cada etapa del aprendizaje</h1>
+            <p class="lead">
+              Filtra por categoria, nivel o modalidad. El buscador encuentra
+              cursos por palabras clave.
+            </p>
+          </div>
+          <div class="page-hero__panel">
+            <p class="muted">Resultados</p>
+            <h2 id="courses-total">0 cursos</h2>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <form class="searchbar" id="courses-filters" autocomplete="off">
+            <div class="searchbar__field">
+              <label for="course-search">Buscar</label>
+              <input
+                type="search"
+                id="course-search"
+                name="search"
+                placeholder="Ej: diseno, data, UX"
+              />
+            </div>
+            <div class="searchbar__field">
+              <label for="course-category">Categoria</label>
+              <select id="course-category" name="category">
+                <option value="all">Todas</option>
+              </select>
+            </div>
+            <div class="searchbar__field">
+              <label for="course-level">Nivel</label>
+              <select id="course-level" name="level">
+                <option value="all">Todos</option>
+              </select>
+            </div>
+            <button class="btn btn--ghost" type="button" id="courses-clear">
+              Limpiar filtros
+            </button>
+          </form>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <div class="cards-grid" id="courses-grid"></div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer__grid">
+        <div>
+          <p class="logo">AulaNova</p>
+          <p class="muted">
+            Catalogo educativo estatico para mostrar cursos internos y recursos
+            de aprendizaje.
+          </p>
+        </div>
+        <div>
+          <h3>Plataforma</h3>
+          <ul>
+            <li><a href="cursos.html">Cursos</a></li>
+            <li><a href="recursos.html">Recursos</a></li>
+            <li><a href="inscripcion.html">Inscripcion</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3>Contacto</h3>
+          <ul>
+            <li><a href="mailto:hola@aulanova.com">hola@aulanova.com</a></li>
+            <li><a href="tel:+540110000000">+54 011 0000 0000</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="container footer__bottom">
+        <p class="muted">© 2026 AulaNova. Todos los derechos reservados.</p>
+      </div>
+    </footer>
+
+    <script type="module" src="js/app.js"></script>
+  </body>
+</html>

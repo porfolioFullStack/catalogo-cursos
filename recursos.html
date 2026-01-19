@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Catalogo de Cursos | Recursos</title>
+    <meta
+      name="description"
+      content="Galeria de recursos descargables con filtros y vista previa."
+    />
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
+  <body class="page-recursos">
+    <header class="site-header">
+      <div class="container header__inner">
+        <a class="logo" href="index.html">AulaNova</a>
+        <nav class="nav" aria-label="Navegacion principal">
+          <a href="index.html">Inicio</a>
+          <a href="cursos.html">Cursos</a>
+          <a href="recursos.html" aria-current="page">Recursos</a>
+          <a href="inscripcion.html" class="btn btn--ghost">Inscripcion</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="page-hero page-hero--compact">
+        <div class="container page-hero__content">
+          <div>
+            <p class="eyebrow">Recursos</p>
+            <h1>Biblioteca con guias listas para aplicar</h1>
+            <p class="lead">
+              Filtra por tipo y nivel. Abre cada recurso en un modal para
+              previsualizarlo.
+            </p>
+          </div>
+          <div class="page-hero__panel">
+            <p class="muted">Actualizados</p>
+            <h2>Semanalmente</h2>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <form class="searchbar" id="resources-filters" autocomplete="off">
+            <div class="searchbar__field">
+              <label for="resource-type">Tipo</label>
+              <select id="resource-type" name="type">
+                <option value="all">Todos</option>
+              </select>
+            </div>
+            <div class="searchbar__field">
+              <label for="resource-level">Nivel</label>
+              <select id="resource-level" name="level">
+                <option value="all">Todos</option>
+              </select>
+            </div>
+            <button class="btn btn--ghost" type="button" id="resources-clear">
+              Limpiar filtros
+            </button>
+          </form>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <div class="cards-grid cards-grid--resources" id="resources-grid"></div>
+        </div>
+      </section>
+    </main>
+
+    <div class="modal" id="resource-modal" aria-hidden="true">
+      <div class="modal__backdrop" data-modal-close></div>
+      <div class="modal__dialog" role="dialog" aria-modal="true">
+        <button class="modal__close" type="button" data-modal-close>
+          Cerrar
+        </button>
+        <div class="modal__content">
+          <p class="eyebrow" id="modal-category"></p>
+          <h2 id="modal-title"></h2>
+          <p class="lead" id="modal-description"></p>
+          <div class="modal__meta" id="modal-meta"></div>
+        </div>
+      </div>
+    </div>
+
+    <footer class="site-footer">
+      <div class="container footer__grid">
+        <div>
+          <p class="logo">AulaNova</p>
+          <p class="muted">
+            Catalogo educativo estatico para mostrar cursos internos y recursos
+            de aprendizaje.
+          </p>
+        </div>
+        <div>
+          <h3>Plataforma</h3>
+          <ul>
+            <li><a href="cursos.html">Cursos</a></li>
+            <li><a href="recursos.html">Recursos</a></li>
+            <li><a href="inscripcion.html">Inscripcion</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3>Contacto</h3>
+          <ul>
+            <li><a href="mailto:hola@aulanova.com">hola@aulanova.com</a></li>
+            <li><a href="tel:+540110000000">+54 011 0000 0000</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="container footer__bottom">
+        <p class="muted">© 2026 AulaNova. Todos los derechos reservados.</p>
+      </div>
+    </footer>
+
+    <script type="module" src="js/app.js"></script>
+  </body>
+</html>

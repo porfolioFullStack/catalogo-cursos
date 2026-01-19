@@ -1,0 +1,26 @@
+.resource-card {
+  display: grid;
+  gap: var(--space-3);
+}
+
+.resource-card__type {
+  font-family: var(--font-display);
+  font-size: 0.85rem;
+  color: var(--color-secondary);
+}
+
+.resource-card__cover {
+  height: 140px;
+  border-radius: var(--radius-md);
+  background: linear-gradient(
+      120deg,
+      rgba(30, 91, 99, 0.2),
+      rgba(245, 90, 59, 0.2)
+    ),
+    #fdfbf9;
+  display: flex;
+  align-items: flex-end;
+  padding: var(--space-3);
+  font-family: var(--font-display);
+  font-size: 0.85rem;
+}

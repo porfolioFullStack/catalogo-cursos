@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Catalogo de Cursos | Inicio</title>
+    <meta
+      name="description"
+      content="Mini plataforma educativa con catalogo de cursos, recursos y formulario de inscripcion."
+    />
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
+  <body class="page-home">
+    <header class="site-header">
+      <div class="container header__inner">
+        <a class="logo" href="index.html">AulaNova</a>
+        <nav class="nav" aria-label="Navegacion principal">
+          <a href="index.html" aria-current="page">Inicio</a>
+          <a href="cursos.html">Cursos</a>
+          <a href="recursos.html">Recursos</a>
+          <a href="inscripcion.html" class="btn btn--ghost">Inscripcion</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="container hero__grid">
+          <div class="hero__content">
+            <p class="eyebrow">Plataforma educativa</p>
+            <h1>Catalogo vivo de cursos para equipos curiosos</h1>
+            <p class="lead">
+              Explora rutas de aprendizaje por nivel, filtra por categoria y
+              guarda tus recursos favoritos para estudiar cuando quieras.
+            </p>
+            <div class="hero__actions">
+              <a class="btn btn--primary" href="cursos.html">Ver catalogo</a>
+              <a class="btn btn--secondary" href="recursos.html">Ver recursos</a>
+            </div>
+          </div>
+          <div class="hero__panel">
+            <div class="stat-card">
+              <span class="stat-card__label">Cursos activos</span>
+              <span class="stat-card__value" id="course-count">0</span>
+            </div>
+            <div class="stat-card">
+              <span class="stat-card__label">Modalidades</span>
+              <span class="stat-card__value">Online + Hibrido</span>
+            </div>
+            <div class="stat-card">
+              <span class="stat-card__label">Recursos</span>
+              <span class="stat-card__value">Guia + Plantillas</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container section__head">
+          <div>
+            <p class="eyebrow">Destacados</p>
+            <h2>Cursos recomendados para arrancar</h2>
+          </div>
+          <a class="btn btn--ghost" href="cursos.html">Ver todos</a>
+        </div>
+        <div class="cards-grid" id="featured-courses"></div>
+      </section>
+
+      <section class="section section--alt">
+        <div class="container">
+          <div class="cta">
+            <div>
+              <p class="eyebrow">Inscripcion abierta</p>
+              <h2>Sumate a la proxima cohorte</h2>
+              <p class="lead">
+                Completa el formulario y recibe un itinerario personalizado en
+                menos de 24 horas.
+              </p>
+            </div>
+            <a class="btn btn--primary" href="inscripcion.html">Inscribirme</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer__grid">
+        <div>
+          <p class="logo">AulaNova</p>
+          <p class="muted">
+            Catalogo educativo estatico para mostrar cursos internos y recursos
+            de aprendizaje.
+          </p>
+        </div>
+        <div>
+          <h3>Plataforma</h3>
+          <ul>
+            <li><a href="cursos.html">Cursos</a></li>
+            <li><a href="recursos.html">Recursos</a></li>
+            <li><a href="inscripcion.html">Inscripcion</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3>Contacto</h3>
+          <ul>
+            <li><a href="mailto:hola@aulanova.com">hola@aulanova.com</a></li>
+            <li><a href="tel:+540110000000">+54 011 0000 0000</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="container footer__bottom">
+        <p class="muted">© 2026 AulaNova. Todos los derechos reservados.</p>
+      </div>
+    </footer>
+
+    <script type="module" src="js/app.js"></script>
+  </body>
+</html>
