@@ -39,3 +39,7 @@ Recomendado: VSCode + Live Server (abrir `index.html`).
 - HTML: estructura semántica sin estilos inline
 - CSS: base → layout → components → pages
 - JS: evitar variables globales, inicializar desde `js/app.js`
+
+## Pagina de navegacion
+https://porfoliofullstack.github.io/catalogo-cursos/
+
