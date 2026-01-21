@@ -25,6 +25,9 @@ Integrar fundamentos de front en un proyecto único:
 Proyecto estático (sin build).
 Recomendado: VSCode + Live Server (abrir `index.html`).
 
+## Pagina de navegacion
+https://porfoliofullstack.github.io/catalogo-cursos/
+
 ## Roadmap
 - [ ] Maquetado semántico de páginas + header/footer consistentes
 - [ ] Tokens de diseño en `css/base/variables.css`
@@ -40,6 +43,5 @@ Recomendado: VSCode + Live Server (abrir `index.html`).
 - CSS: base → layout → components → pages
 - JS: evitar variables globales, inicializar desde `js/app.js`
 
-## Pagina de navegacion
-https://porfoliofullstack.github.io/catalogo-cursos/
+
 
